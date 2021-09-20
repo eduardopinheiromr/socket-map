@@ -1,6 +1,6 @@
-const MessageTemplates = require("./MessageTemplates");
+console.log("WATAFOCK");
 
-module.exports = class Chat {
+class Chat {
   constructor(selectors) {
     this.socket = io();
     this.template = new MessageTemplates();
@@ -30,4 +30,4 @@ module.exports = class Chat {
   loadHistory(history) {
     history.forEach((msg) => this.renderMessage(msg));
   }
-};
+}

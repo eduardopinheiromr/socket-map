@@ -1,5 +1,3 @@
-const Chat = require("./entities/Chat");
-
 const selectors = {
   messages: "#messages",
   form: "#form",

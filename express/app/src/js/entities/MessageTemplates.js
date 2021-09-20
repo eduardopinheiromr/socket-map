@@ -1,4 +1,4 @@
-module.exports = class MessageTemplates {
+class MessageTemplates {
   constructor() {}
 
   message(msg) {
@@ -6,4 +6,4 @@ module.exports = class MessageTemplates {
               <li>${msg}</li>
           `;
   }
-};
+}
