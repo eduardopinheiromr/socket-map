@@ -1,9 +1,8 @@
 const {
   uniqueNamesGenerator,
-  adjectives,
-  colors,
+  languages,
   animals,
 } = require("unique-names-generator");
 
 module.exports = generateRandomName = () =>
-  uniqueNamesGenerator({ dictionaries: [adjectives, colors, animals] }); // big_red_donkey
+  uniqueNamesGenerator({ dictionaries: [languages, animals] }); // big_red_donkey

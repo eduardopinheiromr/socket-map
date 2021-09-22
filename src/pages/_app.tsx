@@ -1,11 +1,14 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import { SocketProvider } from "../context/SocketContext";
 import { theme } from "../config/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <SocketProvider>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </SocketProvider>
   );
 }
 export default MyApp;

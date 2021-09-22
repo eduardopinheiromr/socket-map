@@ -11,10 +11,15 @@ module.exports = class User {
       name: generateRandomName(),
       handShakeDate: socket.handshake.time,
       socket_id: socket.id,
+      connected: socket.connected,
     };
 
     this.list.push(user);
 
     return user;
+  }
+
+  logOut(user) {
+    this.list = this.list.filter((userLogged) => userLogged.id !== user.id);
   }
 };
